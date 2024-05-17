@@ -7,7 +7,7 @@ import (
 	pb "github.com/TomiwaAribisala-git/grpcdemo/proto"
 )
 
-func (s *helloServer) SayHelloServerStreaming(req *pb.NamesList, stream pb.GreetService_SayhelloserverstreamingServer) error {
+func (s *helloServer) Sayhelloserverstreaming(req *pb.NamesList, stream pb.GreetService_SayhelloserverstreamingServer) error {
 	log.Printf("got request with names: %v", req.Names)
 	for _, name := range req.Names {
 		res := &pb.HelloResponse{
