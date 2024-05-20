@@ -23,15 +23,3 @@ apt install protobuf-compiler
 ```sh
 protoc --version
 ```
-
-```sh
-protoc --go_out=. --go-grpc_out=. proto/greet.proto
-```
-
-```sh   // client
-go run *.go
-```
-
-```sh   // server
-go run *.go
-```
