@@ -1,8 +1,14 @@
 pb:
 	protoc --go_out=. --go-grpc_out=. proto/greet.proto
 
-server:
+builds:
+	go build -o server/*.go
+
+buildc:
+	go build -o client/*.go
+
+runs:
 	go run server/*.go
 
-client:
+runc:
 	go run client/*.go
